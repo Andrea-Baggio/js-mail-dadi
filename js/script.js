@@ -21,8 +21,6 @@ const userEmail = prompt('Inserisci la tua e-mail!');
 console.log(userEmail);
 let arr = ['email1', 'email2', 'email3'];
 
-if (userEmail === arr) {
-    alert('E-mail inserita correttamente');
-} else if (userEmail != arr) {
-    alert('Questa e-mail non esiste');
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
 }
