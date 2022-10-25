@@ -17,7 +17,8 @@ SE è presente allora si da conferma
 SE INVECE non è presente dare errore
 */
 
-const userEmail = parseInt(prompt('Inserisci la tua e-mail!'));
+const userEmail = prompt('Inserisci la tua e-mail!');
+console.log(userEmail);
 let arr = ['email1', 'email2', 'email3'];
 
 if (userEmail === arr) {
