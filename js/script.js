@@ -18,9 +18,8 @@ SE INVECE non è presente dare errore
 */
 
 const userEmail = prompt('Inserisci la tua e-mail!');
-console.log(userEmail);
 let arr = ['email1', 'email2', 'email3'];
 
-for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
+for (let i = 0; i < arr; i++) {
+    
 }
