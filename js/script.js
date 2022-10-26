@@ -1,25 +1,26 @@
-/*
-Mail
-Chiedi all’utente la sua email,
-controlla che sia nella lista di chi può accedere,
-stampa un messaggio appropriato sull’esito del controllo.
+const arr = ['email1', 'email2', 'email3'];
 
-Gioco dei dadi
-Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
-Stabilire il vincitore, in base a chi fa il punteggio più alto.
-*/
+const eleForm = document.querySelector('form');
+const eleEmail = document.getElementById('user-email');
+const eleOutput = document.getElementById('output');
 
-/* Mail:
-Chiedi mail
-Ricercare la mail in una libreria precedentemente creata
-Controllare che la mail inserita si trovi all'interno della libreria
-SE è presente allora si da conferma
-SE INVECE non è presente dare errore
-*/
+eleForm.addEventListener('submit', function (event) {
+    event.preventDefault();
 
-const userEmail = prompt('Inserisci la tua e-mail!');
-let arr = ['email1', 'email2', 'email3'];
-
-for (let i = 0; i < arr; i++) {
-    
-}
+    let emailFound = false;
+    for (let i = 0; i < arr.length; i++) {
+        const emailSearched = eleEmail.value;
+        if (emailSearched === arr[i]) {
+            console.log('trovata');
+            emailFound = true;
+        }         
+        
+        if (emailFound) {
+        eleOutput.innerHTML = 'E-mail trovata!'
+            
+        }        
+        else {
+        eleOutput.innerHTML = 'E-mail non trovata :('
+        }
+    }
+})
